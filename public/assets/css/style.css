@@ -15,7 +15,9 @@ div{
 h1,h2{
   text-align: center;
 }
-
+hr{
+  border: solid black 5px;
+}
 li {
   padding: 5px;
   margin: 5px;
