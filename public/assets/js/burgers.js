@@ -74,18 +74,21 @@ $(function() {
     var id = $("[name=id]").val().trim();
 
     var updatedBurger = {
-      hungry: $("#updateBurger [name=updateBurger]").val().trim(),
+      name: $("#updateBurger [name=id]").val().trim()
     };
 
     // Send the PUT request.
-    $.ajax("/api/burgers/update/" + id, {
+    $.ajax("/api/update/burgers/" + id, {
       type: "PUT",
-      data: updatedBurger,
-    }).then(function () {
-      console.log("updated id ", id);
-      // Reload the page to get the updated list
-      location.reload();
-    });
+      data: updatedBurger
+    }).then(
+      function () {
+        console.log("updated id ", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
   });
+
 });
-updateBurger;
+

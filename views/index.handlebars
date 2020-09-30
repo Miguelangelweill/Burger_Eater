@@ -30,7 +30,7 @@
 </div>
 <br>
 
-<hr>
+<hr style="border: solid black 0.8px; ">
 <br>
 <div  class="col-md-5 col-sm-12 col-xs-12 float-left">
   <h2>Add a Burger</h2>
@@ -54,14 +54,19 @@
 <div class="col-md-5 col-sm-12 col-xs-12 float-right">
   <h2>Update Burger</h2>
 
+<div class="row">
 <form id="updateBurger" class="button-size">
+    <textarea id="textAreaUpdate"type="text" name="updateBurger" placeholder="Burger"></textarea>
   <select name="id">
     {{#each burgers}}
     <option value="{{this.id}}">{{this.name}}</option>
     {{/each}}
-  </select> 
-  <textarea type="text" name="updateBurger" placeholder="Burger"></textarea>
-  <button id="updateBurger" type="submit">Update Burger!</button>
+  </select>
+  <button id="updateBurgerBtn" type="submit">Update Burger!!</button>
 </form>
+
+
+</div>
+
 </div>
 

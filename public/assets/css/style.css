@@ -18,6 +18,9 @@ h1,h2{
 hr{
   border: solid black 5px;
 }
+#textAreaUpdate{
+width: 265px;
+}
 li {
   padding: 5px;
   margin: 5px;
