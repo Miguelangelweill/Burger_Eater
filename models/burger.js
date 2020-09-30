@@ -19,7 +19,7 @@ var burgerOrmObject = {
     });
   },
   updateBurger: function ( name,condition , cb) {
-    orm.update("BURGERS",name , condition, function (res) {
+    orm.updateBurger("BURGERS",name , condition, function (res) {
       cb(res);
     });
   },

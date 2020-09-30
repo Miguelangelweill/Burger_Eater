@@ -69,22 +69,11 @@ var orm = {
     console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
-        throw err;
-      }
-
-      cb(result);
-    });
-  },
-  updateBurger: function(table,condition,name, cb) {
-    var queryString = "UPDATE ?? SET name=? WHERE id=?"
-    console.log(queryString);
-    connection.query(queryString,[table,name,condition], function(err, result) {
-      if (err) {
         console.log(err)
       }
-
       cb(result);
     });
+
   },
   delete: function(table, condition, cb) {
     var queryString = "DELETE FROM " + table;
@@ -93,7 +82,7 @@ var orm = {
 
     connection.query(queryString, function(err, result) {
       if (err) {
-        throw err;
+        console.log(err);
       }
 
       cb(result);
