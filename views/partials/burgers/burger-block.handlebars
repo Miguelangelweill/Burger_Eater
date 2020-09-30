@@ -2,6 +2,7 @@
 	{{name}}
 
 	<button class="change-hungry" data-id="{{id}}" data-newhungry="{{hungry}}">
+		{{!-- This is an else if statement which is boolean to tell us if the burger hass been devoured or not. --}}
 		{{#if hungry}}Devoured!!{{else}}Not Devoured!!{{/if}}
 	</button>
 	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>

@@ -1,3 +1,4 @@
+--Use this to populate your database.
 INSERT INTO BURGERS (name) VALUES ('Brisket Burger');
 INSERT INTO BURGERS (name) VALUES ('BLT Burger');
 INSERT INTO BURGERS (name, hungry) VALUES ('Onion ring Burger', true);

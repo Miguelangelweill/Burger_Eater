@@ -56,12 +56,14 @@
 
 <div class="row">
 <form id="updateBurger" class="button-size">
-    <textarea id="textAreaUpdate"type="text" name="updateBurger" placeholder="Burger"></textarea>
+      <textarea id="textAreaUpdate"type="text" name="updateBurger" placeholder="Burger"></textarea>
+      {{!-- Here we are creating a drop down list that will loop thru and get all of the items from the json object --}}
   <select name="id">
     {{#each burgers}}
     <option value="{{this.id}}">{{this.name}}</option>
     {{/each}}
   </select>
+
   <button id="updateBurgerBtn" type="submit">Update Burger!!</button>
 </form>
 
