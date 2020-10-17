@@ -1,7 +1,7 @@
 {
   "name": "mvc_design",
   "version": "1.0.0",
-  "description": "",
+  "description": "This application is to keep track of the burgers that we want to eat in the future and have already eaten. Maybe we want to eat them again",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
